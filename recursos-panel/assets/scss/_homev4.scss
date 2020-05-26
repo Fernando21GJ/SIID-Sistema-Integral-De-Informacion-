@@ -1,0 +1,337 @@
+/*======== 5.20 BANNER 4 ========*/
+.version4{
+  #menuBar.bb-fixed-header {
+		@include desktops{
+			height: 90px !important;
+		}
+	}
+  .navbar-secondary.secondary-light{
+    .navbar-nav{
+      li{
+        a{
+          span{
+            color: $black-color;
+          }
+        }
+        &.active{
+					a{
+						span{
+							color: $color1;
+						}
+					}
+				}
+      }
+    }
+  }
+
+  .tp-caption.rs-caption-1.custom,
+	.tp-caption.rs-caption-2.custom,
+	.tp-caption.rs-caption-3.custom {
+		@include mobile-all {
+			left: 30% !important;
+		}
+		@include tablet {
+			left: 40% !important;
+		}
+		@include desktops {
+			left: 45% !important;
+		}
+    @include large-desktops {
+      left: 53% !important;
+    }
+	}
+  .bannercontainerV2 .tp-caption.rs-caption-1{
+  	color: #222222;
+  }
+  .bannercontainerV2 .tp-caption.rs-caption-2{
+  	color: $text-color;
+  }
+  .bannercontainerV2 .tp-caption.rs-caption-3 {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+// Category Section V4
+.padding-LR-4{
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+.categoris{
+  .box{
+    .box-img{
+      background-color: transparent !important;
+      overflow: hidden;
+      border-radius: 10px !important;
+      height: 240px !important;
+
+      img{
+        margin-top: 13px ;
+        max-height: 175px;
+      }
+    }
+    .box-info{
+      padding-bottom: 25px !important;
+      h4{
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+.bg-gray{
+  background-color: $bg-gray;
+}
+.single-category{
+  @include mobile-all{
+    padding: 50px 0 !important;
+  }
+  @include desktops{
+    padding: 100px 0 !important;
+  }
+  .single-cat-border{
+    border: 1px solid rgba(222, 222, 222, 0.5);;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px 0px 20px !important;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .category-menu{
+    .category-title{
+      text-align: left;
+      color: $white-color;
+      padding: 17px;
+      border-radius: 5px;
+      background: #f0c24b;
+      text-transform: capitalize;
+      font-size: 24px;
+    }
+    ul{
+      text-align: left !important;
+      padding: 20px;
+      li{
+        padding: 5px 0;
+        a{
+          color: $color10;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .category-menu.color-1{
+    ul{
+      li{
+        a{
+          &:hover{
+            color: $color1;
+          }
+        }
+      }
+    }
+  }
+  .category-menu.color-2{
+    ul{
+      li{
+        a{
+          &:hover{
+            color: $color2;
+          }
+        }
+      }
+    }
+  }
+  .category-menu.color-3{
+    ul{
+      li{
+        a{
+          &:hover{
+            color: $color3;
+          }
+        }
+      }
+    }
+  }
+  .category-menu.color-4{
+    ul{
+      li{
+        a{
+          &:hover{
+            color: $color4;
+          }
+        }
+      }
+    }
+  }
+
+  .category-Slider{
+    .owl-carousel{
+      .owl-controls{
+        .owl-nav{
+          padding: 0 10px;
+        }
+      }
+    }
+    .single-item{
+      position: relative;
+      img{
+        @include tablet{
+          height: 414px;
+        }
+        @include desktops{
+          height: 564px;
+        }
+        @include large-desktops{
+          height: 605px;
+        }
+      }
+
+      .slide-cat-info{
+        @include mobile-all{
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          padding: 10px 20px;
+          text-align: center;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          width: 100%;
+        }
+        @include tablet{
+          position: absolute;
+          bottom: 30px;
+          left: 50%;
+          z-index: 1;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          width: 217px;
+          opacity: .890;
+          padding: 20px;
+          border-radius: 5px;
+        }
+
+        h2{
+          @include mobile-all{
+            color: $white-color !important;
+            font-size: 14px !important;
+            text-transform: capitalize;
+            margin: 0 !important;
+          }
+          @include tablet{
+            font-size: 20px !important;
+          }
+
+          span{
+            @include mobile-all{
+              font-size: 18px !important;
+              display: block;
+            }
+            @include tablet{
+            font-size: 25px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .box{
+    box-shadow: none !important;
+    border-radius: 7px !important;
+    margin-bottom: 10px !important;
+    .border-color-1{
+      border: 2px solid transparent;
+    }
+    .border-color-2{
+      border: 2px solid transparent;
+    }
+    .border-color-3{
+      border: 2px solid transparent;
+    }
+    .border-color-4{
+      border: 2px solid transparent;
+    }
+    .box-img{
+      @include mobile-all{
+        border-top-left-radius: 7px !important;
+        border-top-right-radius: 7px !important;
+        height: 126px !important;
+        padding: 0 !important;
+        background-color: $color11;
+      }
+      @include desktops{
+        height: 170px !important;
+      }
+      @include large-desktops{
+        height: 209px !important;
+      }
+
+      img{
+        @include mobile-all{
+          max-height: 122px !important;
+        }
+        @include tablet{
+          max-height: 125px !important;
+          width: 150px;
+        }
+        @include desktops{
+          max-height: 166px !important;
+          width: 181px;
+        }
+        @include large-desktops{
+          max-height: 206px !important;
+          width: 181px;
+        }
+
+      }
+    }
+    .box-info{
+      @include mobile-all{
+        padding: 5px !important;
+      }
+      @include tablet{
+        padding: 10px !important;
+      }
+      @include desktops{
+        padding: 16px !important;
+      }
+
+      h4{
+        @include mobile-all{
+          font-size: 14px !important;
+          font-weight: 700;
+          margin: 0 !important;
+          margin-bottom: 8px;
+        }
+        @include tablet{
+          font-size: 14px !important;
+        }
+        @include desktops{
+          font-size: 18px !important;
+        }
+      }
+      h3{
+        @include mobile-all{
+          font-family: 'Open Sans', sans-serif;
+          font-size: 15px;
+          margin-top: 8px;
+          color: $white-color;
+          margin-bottom: 0 !important;
+        }
+        @include tablet{
+          font-size: 16px;
+        }
+        @include desktops{
+          font-size: 23px;
+          margin-top: 12px;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}

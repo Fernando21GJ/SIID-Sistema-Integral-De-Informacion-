@@ -1,0 +1,457 @@
+/*======== 3.5 HEADER V3 ========*/
+.headerV3 {
+	position:absolute;
+	width:100%;
+	top:0;
+	.lightHeader {
+	    background-color:rgba(47, 60, 67, 0.502);
+	    box-shadow:none;
+	}
+	#menuBar.menu-sm {
+	  background-color:rgba($black-color,0.8);
+	}
+	.navbar-secondary{
+		.navbar-nav{
+			li{
+				a{
+					span{
+						color: $black-color;
+						@include desktops{
+							color: $white-color !important;
+						}
+					}
+				}
+				&.active{
+					a{
+						span{
+							color: $color1 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.lightHeader .navbar-nav > li > a {
+		@include desktops{
+		   color: $white-color !important;
+		}
+	}
+
+	.navbar-right .dropdown-menu-left {
+		@include tablet{
+	    right: auto;
+	    left: -50%;
+		}
+	}
+	.navbar-right .dropdown-menu-right{
+		@include tablet{
+		    left: auto;
+		    right: -50%;
+		}
+	}
+}
+.version3{
+	#menuBar.bb-fixed-header {
+	  background-color:rgba($black-color,0.8);
+		@include desktops{
+			height: 90px !important;
+		}
+		.navbar-nav > li > a {
+			@include tablet {
+				color: #000;
+			}
+			@include desktops {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.navbar-secondary.lightHeader{
+	@include tablet{
+		height: 75px !important;
+	}
+	@include desktops{
+		height: 110px !important;
+	}
+}
+
+.navbar-secondary{
+	.navbar-header .navbar-brand {
+	  @include mobile-all{
+	  	height: auto;
+	    padding: 15px;
+	    width: 160px;
+	  }
+	  @include desktops{
+	  	height: 110px;
+	  	padding: 30px 15px;
+	  	width: 196px;
+	  }
+	}
+
+	//menu item color
+	.navbar-nav > li.color-1{
+		>a:hover span{
+			color: $color1 !important;
+		}
+		&.singleDrop{
+			>.dropdown-menu{
+				@include desktops{
+					@include add-border(4px, $color1 !important, top);
+				}
+				li{
+					a:hover{
+						background-color: $color1 !important;
+						color: $white-color !important;
+					}
+					&.active > a, &.active li.active a{
+						color: $color1 !important;
+					}
+					&.active a:hover, &.active li.active a:hover{
+						color: $white-color !important;
+					}
+					.dropdown-menu{
+						@include desktops{
+							@include add-border(4px, $color1 !important, left);
+						}
+					}
+				}
+			}
+			&.open a > span{
+				color: $color1 !important;
+			}
+		}
+	}
+
+	.navbar-nav > li.color-3{
+
+		>a:hover span{
+			color: $color3 !important;
+		}
+		&.singleDrop{
+			>.dropdown-menu{
+				@include desktops{
+					@include add-border(4px, $color3 !important, top);
+				}
+				li{
+					a:hover{
+						background-color: $color3 !important;
+						// color: $white-color;
+					}
+					&.active > a, &.active li.active a{
+						color: $color3 !important;
+					}
+					.dropdown-menu{
+						@include desktops{
+							@include add-border(4px, $color3 !important, left);
+						}
+					}
+				}
+			}
+			&.open a > span{
+				color: $color3 !important;
+			}
+		}
+	}
+
+
+	.navbar-nav > li.color-2{
+		>a:hover span{
+			color: $color2 !important;
+		}
+	}
+	.navbar-nav > li.color-2.dropdown.megaDropMenu{
+		.dropdown-menu{
+			@include desktops{
+				@include add-border(4px, $color2 !important, top);
+			}
+			.list-unstyled{
+				li{
+					&.listHeading, &:first-child{
+						color: $color2 !important;
+					}
+					a:hover{
+						background-color: $color2 !important;
+						color: $white-color !important;
+					}
+					&.active > a, &.active li.active a{
+						color: $color2 !important;
+					}
+					&.active a:hover, &.active li.active a:hover{
+						color: $white-color !important;
+					}
+				}
+			}
+		}
+		.open a > span{
+			color: $color2 !important;
+		}
+	}
+
+	.navbar-nav > li.color-4{
+		&.singleDrop{
+			>.dropdown-menu{
+				@include desktops{
+					@include add-border(4px, $color4 !important, top);
+				}
+				li{
+					.dropdown-menu{
+						@include desktops{
+							@include add-border(4px, $color4 !important, left);
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-nav > li.color-5{
+		&.singleDrop{
+			>.dropdown-menu{
+				@include desktops{
+					@include add-border(4px, $color5 !important, top);
+				}
+				li{
+					.dropdown-menu{
+						@include desktops{
+							@include add-border(4px, $color5 !important, left);
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.navbar-nav > li.color-6{
+		&.singleDrop{
+			>.dropdown-menu{
+				@include desktops{
+					@include add-border(4px, $color6 !important, top);
+				}
+			}
+		}
+	}
+	.navbar-nav{
+		padding-top: 15px;
+			.dropdown-menu{
+				border: none !important
+			}
+		li{
+			a{
+				i{
+					display: inline-block !important;
+				}
+				span{
+					border-right: none !important;
+					display: inline-block !important;
+					text-align: left;
+					padding-left: 5px !important;
+					width: auto;
+					padding-right: 24px;
+					// color: #fff;
+				}
+			}
+			&:last-child{
+				a{
+					span{
+						padding-right: 0px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.navbar-secondary.bb-fixed-header .navbar-nav > li.dropdown.open > a:after{
+	@include tablet{
+			top: 36px;
+	}
+}
+@media (max-width: 990px) {
+	.navbar-secondary{
+		.dropdown-submenu{
+			>.dropdown-menu{
+				@include mobile{
+					left: 0;
+				}
+				@include desktops{
+					left: 100%;
+				}
+			}
+		}
+
+		// Navbar collapse
+		.navbar-nav{
+			height: 340px;
+			overflow-x:hidden;
+			@include transition(height 0.3s ease);
+			@include desktops{
+				height: auto;
+				overflow-x:visible;
+				overflow-y:visible;
+			}
+			margin: 0 0 0 -15px;
+			>li{
+				a{
+					@include mobile-all{
+						color: $black-color;
+						padding: 12px !important;
+					}
+
+					@include desktops{
+						margin: 0;
+						padding: 23px 0;
+					}
+				}
+			}
+			.singleDrop{
+				.dropdown-menu{
+					.dropdown-submenu {
+						.dropdown-menu {
+							&:before{
+								position: absolute;
+								width: 3px;
+								left: 10px;
+								height: 80%;
+								content: '';
+								background-color: #D3D3D3;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+		.navbar-collapse li.dropdown .dropdown-menu{
+			position: relative;
+			box-shadow: none;
+		}
+		.navbar-nav > li.dropdown.megaDropMenu .dropdown-menu {
+			.list-unstyled {
+				position: relative;
+				&:after{
+					position: absolute;
+					width: 3px;
+					left: 10px;
+					height: 60%;
+					content: '';
+					background-color: #D3D3D3;
+					top: 29%;
+					@include tablet{
+						top: 27%;
+					}
+				}
+				li:first-child{
+					font-family: 'Open Sans', sans-serif;
+					font-size: 14px;
+					font-weight: 400;
+					@include tablet{
+						margin-left: -15px;
+					}
+				}
+			}
+		}
+		.navbar-nav > li.dropdown.singleDrop .dropdown-menu li .dropdown-menu {
+			margin-left: 15px !important;
+		}
+		.navbar-collapse li.dropdown.open .dropdown-menu{
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 0 !important;
+			@include tablet{
+				margin-left: 10px;
+			}
+			&:after{
+				display: none;
+				content: '';
+			}
+		}
+		.navbar-nav > li.dropdown.singleDrop > a:after{
+			@include tablet {
+				content: "\f107" !important;
+				color: #222;
+				left: auto;
+			}
+		}
+
+		.navbar-nav > li.color-2.dropdown.megaDropMenu > a:after{
+			@include tablet {
+				content: "\f107" !important;
+				color: #222;
+				left: auto;
+			}
+		}
+
+		.navbar-right .dropdown-menu-left {
+			@include tablet{
+				right: auto;
+				left: 0%;
+			}
+		}
+		.navbar-right .dropdown-menu-right{
+			@include tablet{
+				left: auto;
+				right: 0%;
+			}
+		}
+
+		.navbar-header {
+			float: none;
+		}
+		.navbar-left,.navbar-right {
+			float: none !important;
+		}
+		.navbar-toggle {
+			display: block;
+		}
+
+		.navbar-collapse.collapse {
+			display: none!important;
+		}
+		.navbar-nav {
+			float: none!important;
+			background-color: #fff !important;
+		}
+
+		.navbar-nav>li {
+			float: none;
+		}
+		.navbar-nav>li>a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.collapse.in{
+			display:block !important;
+		}
+
+	}
+}
+
+.navbar-secondary{
+	.navbar-nav > li.dropdown.singleDrop .dropdown-menu li a{
+		padding: 6px 12px 6px 24px !important;
+		@include desktops {
+			padding: 10px 12px !important;
+		}
+	}
+}
+.navbar-secondary {
+	.navbar-nav{
+		.dropdown{
+			.dropdown-submenu{
+				i{
+					display: none !important;
+					@include desktops{
+						display: block !important;
+					}
+				}
+			}
+		}
+	}
+}

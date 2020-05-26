@@ -1,0 +1,100 @@
+@import 'headerV3';
+
+/*======== 5.18 BANNER 3 ========*/
+.bannercontainerV3{
+	width:100%;
+	position:relative;
+	padding:0;
+}
+
+.bannercontainerV3{
+	.tp-caption.rs-caption-1{
+		span{
+			color: $color7 !important;
+		}
+	}
+	.tp-caption.rs-caption-3{
+		.btn-default{
+			padding: 8px 20px !important;
+			background-color: $white-color !important;
+			color: $color8 !important;
+			font-size: 14px;
+
+			@include desktops{
+				padding: 12px 25px !important;
+				font-weight: 900;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.courseSidebar{
+	.panel-body{
+		.input-group{
+			.input-group-addon{
+				.bg-color-1{
+					border: none !important;
+				}
+			}
+		}
+	}
+}
+
+
+.courseList
+.media-body
+.list-inline.btnPart.btn-yellow>li a.btn-primary:hover {
+    background-color: #f0c24b!important;
+		border:none !important
+}
+.priceRange .progress .progress-bar,
+.priceRange .progress .bulet,
+.courseList .media-body .list-inline.btnPart.btn-green>li a.btn-primary:hover {
+    background-color: #b5d56a!important;
+		border:none !important
+}
+
+.courseList .media-body
+.list-inline.btnPart.btn-sky>li a.btn-primary:hover {
+    background-color: #84bed6!important;
+		border:none !important
+}
+
+.tableVertical .priceBtn.alt .btn-primary {
+    background-color: #ffffff !important;
+    color: #666666 !important;
+		border:none !important;
+}
+
+
+/*======== 5.19 ABOUT SCHOOL ========*/
+.aboutSchool{
+	@include mobile-all{
+		padding: 50px !important;
+	}
+	@include desktops{
+		padding: 100px 0px 0px 0px !important;
+	};
+	.schoolInfo{
+		h2{
+			text-transform: uppercase;
+			color: $color8;
+			font-size: 30px;
+			span{
+				color: $text-color;
+				font-size: 38px;
+			}
+		}
+		p{
+			color: #222222 !important;
+			font-weight: 600;
+			font-size: 18px;
+		}
+		.aboutP2{
+			color: #666666 !important;
+			font-weight: 600;
+			font-size: 18px;
+		}
+	}
+}
